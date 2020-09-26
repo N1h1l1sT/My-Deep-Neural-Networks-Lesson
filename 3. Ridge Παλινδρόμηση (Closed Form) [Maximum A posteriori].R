@@ -1,4 +1,4 @@
-#Ο Κώδικας σε αυτό το script είναι μέρος του μαθήματος "Νευρωνικά Δίκτυα 13: Κώδικας Ridge Παλινδρόμησης"
+#Ξ ΞΟΞ΄ΞΉΞΊΞ±Ο‚ ΟƒΞµ Ξ±Ο…Ο„Ο Ο„ΞΏ script ΞµΞ―Ξ½Ξ±ΞΉ ΞΌΞ­ΟΞΏΟ‚ Ο„ΞΏΟ… ΞΌΞ±ΞΈΞ®ΞΌΞ±Ο„ΞΏΟ‚ "ΞΞµΟ…ΟΟ‰Ξ½ΞΉΞΊΞ¬ Ξ”Ξ―ΞΊΟ„Ο…Ξ± 13: ΞΟΞ΄ΞΉΞΊΞ±Ο‚ Ridge Ξ Ξ±Ξ»ΞΉΞ½Ξ΄ΟΟΞΌΞ·ΟƒΞ·Ο‚"
 #https://www.youtube.com/watch?v=XJRId4tImIg
 library(dplyr)
 library(MASS)
@@ -38,7 +38,7 @@ YTest <- Y[((NROW(X)*0.8)+1):NROW(X)]
 #L2 Linear Regression (Closed Form) Maximum a posteriori#
 #########################################################
 L2 <- 0.1
-LI <- diag(L2, nrow = NCOL(XTrain), ncol = NCOL(XTrain)) #λ regularisation times the Identity Matrix (I)
+LI <- diag(L2, nrow = NCOL(XTrain), ncol = NCOL(XTrain)) #Ξ» regularisation times the Identity Matrix (I)
 
 W <- base::solve(LI + t(XTrain) %*% XTrain, (t(XTrain) %*% YTrain))
 Yhat <- (XTest %*% W)[,1]
